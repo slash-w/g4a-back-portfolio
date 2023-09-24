@@ -1,8 +1,1097 @@
 import "../../config/database.js";
-import Game from "../Games.js";
 import "dotenv/config.js";
+import Game from "../Games.js";
 
 let games = [
+  {
+    name: "Street Fighter 6",
+    detailed_description: "<h1>Street Fighter™ 6</h1><p><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1364780/extras/13_Custom-Images_ST.png?t=1694074938\" /><br><strong>Street Fighter™ 6</strong><br>・El juego completo</p><br><h1>Street Fighter™ 6 Deluxe Edition</h1><p><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1364780/extras/13_Custom-Images_DX.png?t=1694074938\" /><br><strong>Street Fighter™ 6 Deluxe Edition</strong><br>・El juego completo<br>・Character Pass para la temporada 1, que incluye:<br>- 4 personajes adicionales (Rashid, A.K.I., Ed, Akuma)<br>- 4 colores adicionales para personajes: atuendo 1 con colores 3-10<br>- Regalo por compra: 4200 Drive Tickets<br>* Se publicará contenido adicional progresivamente una vez que se lance el juego.<br>* Consulta el sitio web oficial para información acerca del producto y del calendario de lanzamiento.</p><br><h1>Street Fighter™ 6 Ultimate Edition</h1><p><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1364780/extras/13_Custom-Images_ULT.png?t=1694074938\" /><br><strong>Street Fighter™ 6 Ultimate Edition</strong><br>・El juego completo<br>・Ultimate Pass para la temporada 1, que incluye:<br>- 4 personajes adicionales (Rashid, A.K.I., Ed, Akuma)<br>- 4 colores adicionales para personajes: atuendo 1 con colores 3-10<br>- 4 colores adicionales para personajes: atuendo 2 con colores 1-10<br>- 4 colores adicionales para personajes: atuendo 3 con colores 1-10<br>- 2 escenarios adicionales<br>- Regalo por compra: 7700 Drive Tickets<br>* Se publicará contenido adicional progresivamente una vez que se lance el juego.<br>* Consulta el sitio web oficial para información acerca del producto y del calendario de lanzamiento.</p><br><h1>Acerca del juego</h1>¡Aquí llega el peso pesado de Capcom! Street Fighter™ 6 sale a la venta en todo el mundo el 2 de junio de 2023, y trae consigo una nueva evolución de la saga Street Fighter™.<br><br>Street Fighter 6 hace gala de la potencia del RE ENGINE de Capcom, e incluye tres modos de juego: World Tour, Fighting Ground y Battle Hub.<br><br>Un variado elenco de 18 luchadores<br>Juega con maestros legendarios y nuevos favoritos de los fans como Ryu, Chun-Li, Luke, Jamie, Kimberly y muchos más. En esta última edición verás sus últimos y sorprendentes rediseños, además de sus cinemáticas especiales.<br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1364780/extras/SF6_18Characters_Steam.png?t=1694074938\" /><br><br>Domina el Fighting Ground<br>Street Fighter ofrece un sistema de combate muy avanzado con tres tipos de control (clásico, moderno y dinámico) que te permitirán rápidamente jugar de acuerdo con tu nivel de habilidad.<br>La nueva función de comentarios en tiempo real añade toda la emoción de los combates de competición, demás de explicaciones sencillas sobre tu forma de jugar.<br>El indicador Drive es un nuevo sistema para gestionar tus movimientos. Para poder conseguir la victoria deberás utilizarlo bien.<br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1364780/extras/SF6_FightingGround_Steam.png?t=1694074938\" /><br><br>Explora la calles en World Tour<br>Descubre el significado de la fuerza en World Tour, un inmersivo modo historia para un jugador en el que podrás explorar Metro City y mucho más con tu avatar. Encuentra a maestros que te tomen bajo su tutela y te enseñen su estilos y técnicas.<br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1364780/extras/SF6_WorldTour_Steam.png?t=1694074938\" /><br><br>Busca a rivales en el Battle Hub<br>El Battle Hub consisten en un modo central de Street Fighter 6 en el que los jugadores pueden reunirse, comunicarse y hacerse más fuerte juntos. Utiliza el avatar que creaste en World Tour para competir contra otros jugadores a través de las máquinas arcade del Battle Hub, o dirígete al salón arcade para disfrutar de algunos de los juegos clásicos de Capcom.<br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1364780/extras/SF6_BattleHub_Steam.png?t=1694074938\" /><br><br>Tu camino para convertirte en un luchador de talla mundial empieza aquí.<br><br>Juego online<br>Capcom ofrece diversos servicios online para este juego, incluido el contenido exclusivamente online.<br>* No puedes acceder a determinados elementos de este juego sin una conexión a internet.<br>* Para usar el contenido exclusivamente online, es necesario tener un CAPCOM ID.<br>* Para obtener información sobre los servicios relacionados con CAPCOM ID y descubrir cómo usarlo, visita el sitio web oficial de CAPCOM ID <a href=\"https://steamcommunity.com/linkfilter/?url=https://cid.capcom.com/\" target=\"_blank\" rel=\" noopener\"  >https://cid.capcom.com/</a>. Ten en cuenta que es posible que el uso de CAPCOM ID a veces se encuentre restringido por limitaciones de edad.<br>* Capcom puede suspender temporalmente los servicios online en caso de circunstancias imprevistas.",
+    short_description: "¡Aquí llega el peso pesado de Capcom! Street Fighter™ 6 sale a la venta en todo el mundo el 2 de junio de 2023, ¡y trae consigo una nueva evolución de la saga Street Fighter™! Street Fighter 6 incluye tres modos de juego: World Tour, Fighting Ground y Battle Hub.",
+    supported_languages: "Inglés<strong>*</strong>, Japonés<strong>*</strong>, Francés, Italiano, Alemán, Español de España, Árabe, Portugués de Brasil, Polaco, Ruso, Chino simplificado, Chino tradicional, Coreano<br><strong>*</strong>idiomas con localización de audio",
+    header_image: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/header_alt_assets_5.jpg?t=1694074938",
+    pc_requirements: "<strong>Mínimo:</strong><br><ul class=\"bb_ul\"><li>Requiere un procesador y un sistema operativo de 64 bits<br></li><li><strong>SO:</strong> Windows 10 (64 bit required)<br></li><li><strong>Procesador:</strong> Intel Core i5-7500 / AMD Ryzen 3 1200<br></li><li><strong>Memoria:</strong> 8 GB de RAM<br></li><li><strong>Gráficos:</strong> GTX1060 (VRAM 6GB) / Radeon RX 580 (VRAM 4GB)<br></li><li><strong>DirectX:</strong> Versión 12<br></li><li><strong>Almacenamiento:</strong> 60 GB de espacio disponible<br></li><li><strong>Notas adicionales:</strong> - The framerate may drop during graphic-intensive scenes.</li></ul>",
+    publishers: ["CAPCOM Co., Ltd."],
+    price: 9900,
+    platforms: {
+      windows: true,
+      mac: false,
+      linux: false
+    },
+    genres: [
+      {
+        id: "1",
+        description: "Acción"
+      },
+      {
+        id: "25",
+        description: "Aventura"
+      }
+    ],
+    screenshots: [
+      {
+        id: 0,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_387137f8cccb048c35a8685634372e97785d40aa.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_387137f8cccb048c35a8685634372e97785d40aa.1920x1080.jpg?t=1694074938"
+      },
+      {
+        id: 1,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_a381f1b3b450c18900d47b991ce8e7456e9cdba5.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_a381f1b3b450c18900d47b991ce8e7456e9cdba5.1920x1080.jpg?t=1694074938"
+      },
+      {
+        id: 2,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_f62ce93269a6d8e0027853358af4d6368e2c4b93.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_f62ce93269a6d8e0027853358af4d6368e2c4b93.1920x1080.jpg?t=1694074938"
+      },
+      {
+        id: 3,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_d186566a92ada8cdb08b04769a8c95cd1e380006.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_d186566a92ada8cdb08b04769a8c95cd1e380006.1920x1080.jpg?t=1694074938"
+      },
+      {
+        id: 4,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_ed46aaa9ed94dd6f35a703070f8df16cee5aef61.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_ed46aaa9ed94dd6f35a703070f8df16cee5aef61.1920x1080.jpg?t=1694074938"
+      },
+      {
+        id: 5,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_10191fb5ab48cee99d7a43e636db9202938f143e.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_10191fb5ab48cee99d7a43e636db9202938f143e.1920x1080.jpg?t=1694074938"
+      },
+      {
+        id: 6,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_449d488d2edbe785c4e6010fede1c3b8dae8e388.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_449d488d2edbe785c4e6010fede1c3b8dae8e388.1920x1080.jpg?t=1694074938"
+      },
+      {
+        id: 7,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_2cfc2472e7ff99fd354935135d91e36e81951795.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_2cfc2472e7ff99fd354935135d91e36e81951795.1920x1080.jpg?t=1694074938"
+      },
+      {
+        id: 8,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_3ceb422dbef5f8495e690ed526f684fdcb1022ec.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_3ceb422dbef5f8495e690ed526f684fdcb1022ec.1920x1080.jpg?t=1694074938"
+      },
+      {
+        id: 9,
+        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_201488fc9f1aa5e29e2fc6d96ef2b66e41ddf32e.600x338.jpg?t=1694074938",
+        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/ss_201488fc9f1aa5e29e2fc6d96ef2b66e41ddf32e.1920x1080.jpg?t=1694074938"
+      }
+    ],
+    movies: [
+      {
+        id: 256967189,
+        name: "SF6_AKI_GamePlay_Trailer_Multi_US_ESRB_1080P_FIX_Steamstore",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256967189/movie.293x165.jpg?t=1693546089",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256967189/movie480_vp9.webm?t=1693546089",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256967189/movie_max_vp9.webm?t=1693546089"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256967189/movie480.mp4?t=1693546089",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256967189/movie_max.mp4?t=1693546089"
+        },
+        highlight: true
+      },
+      {
+        id: 256957527,
+        name: "SF6_Rashid_GamePlay_Trailer_Multi_US_ESRB_1080P_FIX_Steamstore",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256957527/movie.293x165.jpg?t=1690166665",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256957527/movie480_vp9.webm?t=1690166665",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256957527/movie_max_vp9.webm?t=1690166665"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256957527/movie480.mp4?t=1690166665",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256957527/movie_max.mp4?t=1690166665"
+        },
+        highlight: true
+      },
+      {
+        id: 256950421,
+        name: "SF6_Launch_AvailableNow_Multi_EN_1080p_FIX",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256950421/movie.293x165.jpg?t=1685677608",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256950421/movie480_vp9.webm?t=1685677608",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256950421/movie_max_vp9.webm?t=1685677608"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256950421/movie480.mp4?t=1685677608",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256950421/movie_max.mp4?t=1685677608"
+        },
+        highlight: true
+      },
+      {
+        id: 256948912,
+        name: "SF6_YourStoryTrailer_Multi_US_ESRB_1080P_FIX",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256948912/movie.293x165.jpg?t=1684997450",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256948912/movie480_vp9.webm?t=1684997450",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256948912/movie_max_vp9.webm?t=1684997450"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256948912/movie480.mp4?t=1684997450",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256948912/movie_max.mp4?t=1684997450"
+        },
+        highlight: true
+      },
+      {
+        id: 256942745,
+        name: "SF6_DemoAnnounceTrailer_Multi_US_ESRB_1080p_FIX",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256942745/movie.293x165.jpg?t=1682309495",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256942745/movie480_vp9.webm?t=1682309495",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256942745/movie_max_vp9.webm?t=1682309495"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256942745/movie480.mp4?t=1682309495",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256942745/movie_max.mp4?t=1682309495"
+        },
+        highlight: true
+      },
+      {
+        id: 256942372,
+        name: "SF6_WT_Gameplay&Avatar_Battle_Trailer_Multi_US_ESRB_1080p_FIX",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256942372/movie.293x165.jpg?t=1682057217",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256942372/movie480_vp9.webm?t=1682057217",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256942372/movie_max_vp9.webm?t=1682057217"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256942372/movie480.mp4?t=1682057217",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256942372/movie_max.mp4?t=1682057217"
+        },
+        highlight: true
+      },
+      {
+        id: 256933399,
+        name: "SF6_Zangief&Lily&Cammy_Gameplay_Multi_US_ESRB_HD_FIX",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256933399/movie.293x165.jpg?t=1677806681",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256933399/movie480_vp9.webm?t=1677806681",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256933399/movie_max_vp9.webm?t=1677806681"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256933399/movie480.mp4?t=1677806681",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256933399/movie_max.mp4?t=1677806681"
+        },
+        highlight: true
+      },
+      {
+        id: 256920197,
+        name: "SF6_Pre-Order_Trailer_Multi_US_ESRB_1080P_FIX_Steamstore",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256920197/movie.293x165.jpg?t=1670565024",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256920197/movie480_vp9.webm?t=1670565024",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256920197/movie_max_vp9.webm?t=1670565024"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256920197/movie480.mp4?t=1670565024",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256920197/movie_max.mp4?t=1670565024"
+        },
+        highlight: true
+      },
+      {
+        id: 256920209,
+        name: "SF6_GameModeOverview_Trailer_Multi_US_ESRB_1080P_FIX_Steamstore",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256920209/movie.293x165.jpg?t=1670565034",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256920209/movie480_vp9.webm?t=1670565034",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256920209/movie_max_vp9.webm?t=1670565034"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256920209/movie480.mp4?t=1670565034",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256920209/movie_max.mp4?t=1670565034"
+        },
+        highlight: true
+      },
+      {
+        id: 256903922,
+        name: "PV1_Multi_ASIA_EN_NoRating_1080P_Fix_v2",
+        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256903922/movie.293x165.jpg?t=1663253713",
+        webm: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256903922/movie480_vp9.webm?t=1663253713",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256903922/movie_max_vp9.webm?t=1663253713"
+        },
+        mp4: {
+          480: "http://cdn.akamai.steamstatic.com/steam/apps/256903922/movie480.mp4?t=1663253713",
+          max: "http://cdn.akamai.steamstatic.com/steam/apps/256903922/movie_max.mp4?t=1663253713"
+        },
+        highlight: true
+      }
+    ],
+    background: "https://cdn.akamai.steamstatic.com/steam/apps/1364780/page.bg.jpg?t=1694074938",
+    keys: [
+      "AEyGyRQF9ayv",
+      "VFrdwccznoKx",
+      "6ojhfbB8MeYg",
+      "x9JBeqAOLpmN",
+      "wBbLptUzPrFB",
+      "uk9VSqRozeq4",
+      "dwM59U2hRNsQ",
+      "mPAp8RSlxwGl"
+    ],
+    rating_pos: 3745,
+    rating_neg: 604,
+
+    featured: true,
+    discount: 0,
+    png_image: "https://i.ibb.co/pKrZHtM/Sf6-luke.webp",
+  }, // STREET FIGHTER 6
+  {
+    name: "GUILTY GEAR -STRIVE-",
+    detailed_description: "<h1>necessary discrepancy original soundtrack</h1><p>◆Rock to the Music!<br><i>GUILTY GEAR -STRIVE- ORIGINAL SOUNDTRACK 『Necessary Discrepancy』</i>is now available on Steam.<br>Blast this amazing album, by composer and General Director Daisuke Ishiwatari, even when you aren't in the game.<br><br><a href=\"https://store.steampowered.com/bundle/26429/Guilty_Gear_Strive_Original_Soundtrack_Necessary_Discrepancy_Full_Album/\" target=\"_blank\" rel=\"\"  ><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1384160/extras/capsule_sm_Disc1.png?t=1693186011\" /> <u>Buy now!</u></a></p><br><h1>Acerca del juego</h1>«GUILTY GEAR -STRIVE-» es el último título de la aclamada franquicia de juegos de lucha de Guilty Gear. Creado por Daisuke Ishiwatari y desarrollado por Arc System Works, «GUILTY GEAR -STRIVE-» mantiene la reputación de la serie gracias a sus revolucionarios gráficos híbridos 2D/3D con sombreado de celdas y su intensa y atractiva jugabilidad.<br><br>Hay un modo historia que te sumerge en el universo de Guilty Gear, nuevos personajes que se unen a los favoritos de los fans y un avanzado uso de rollback netcode.<br><br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1384160/extras/new_op2.gif?t=1693186011\" /><br><br>◆El destino del universo está por definir…<br>La historia de Guilty Gear, que abarca más de 20 años, finalmente llegará a su conclusión con «GUILTY GEAR -STRIVE-». Los héroes y villanos de la serie resolverán por fin las dificultades y tribulaciones a las que se enfrentan. Descubre la asombrosa verdad que te espera al final de todo.<br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1384160/extras/storycut_1.jpg?t=1693186011\" /><br><br>◆Gráficos y animaciones increíbles<br>Los gráficos híbridos 2D/3D de última generación, pioneros en la serie «Guilty Gear», han subido de nivel en «GUILTY GEAR -STRIVE-». ¡La nueva dirección artística y la mejora de las animaciones de los personajes van más allá de todo lo que habías visto en un juego de lucha!<br><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1384160/extras/new_kypart3.gif?t=1693186011\" /><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1384160/extras/new_solpart3.gif?t=1693186011\" /><br><br>◆¡Una revolución en los juegos de lucha!<br>Guilty Gear -Strive- aporta una serie de nuevas e innovadoras mecánicas de juego diseñadas para permitir que los jugadores recién llegados a la serie aprendan rápidamente lo esencial mientras se mantiene la intensa y creativa jugabilidad por la que se alaba a Guilty Gear. Las nuevas incorporaciones a la serie, como la mecánica de destrucción de muros, permiten nuevas y excitantes tácticas en los combates.",
+    short_description: "¡Vive la emoción de la batalla con las minuciosas mecánicas y las magníficas animaciones de Guilty Gear -Strive-, el título más reciente de la vanguardista serie Guilty Gear!",
+    supported_languages: "Inglés<strong>*</strong>, Japonés<strong>*</strong>, Chino simplificado, Chino tradicional, Francés, Italiano, Alemán, Español de España, Coreano<strong>*</strong><br><strong>*</strong>idiomas con localización de audio",
+    header_image: "https://cdn.akamai.steamstatic.com/steam/apps/1384160/header.jpg?t=1693186011",
+    pc_requirements: "<strong>Mínimo:</strong><br><ul class=\"bb_ul\"><li><strong>SO:</strong> Windows 8/10 (64-bit OS required)<br></li><li><strong>Procesador:</strong> AMD FX-4350, 4.2 GHz / Intel Core i5-3450, 3.10 GHz<br></li><li><strong>Memoria:</strong> 4 GB de RAM<br></li><li><strong>Gráficos:</strong> Radeon HD 6870, 1 GB / GeForce GTX 650 Ti, 1 GB<br></li><li><strong>DirectX:</strong> Versión 11<br></li><li><strong>Red:</strong> Conexión de banda ancha a Internet<br></li><li><strong>Almacenamiento:</strong> 26 GB de espacio disponible<br></li><li><strong>Tarjeta de sonido:</strong> DirectX compatible soundcard or onboard chipset</li></ul>",
+    publishers: ["Arc System Works"],
+    price: 6300,
+    platforms: {
+      windows: true,
+      mac: false,
+      linux: false
+    },
+    genres: [{
+      "id": "1",
+      "description": "Acción"
+      }
+    ],
+    screenshots: [
+      {
+      "id": 0,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_0f29aebacb81b972782382dbf4c0079f0d37b330.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_0f29aebacb81b972782382dbf4c0079f0d37b330.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 1,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_2561a4ae822856797b5fb231502b820a962336e0.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_2561a4ae822856797b5fb231502b820a962336e0.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 2,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_104e16788c2ea35e1dac31d96be8d4f1df00f330.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_104e16788c2ea35e1dac31d96be8d4f1df00f330.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 3,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_c290682ecdf413e368d9a66cd4a7a9430860ca1d.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_c290682ecdf413e368d9a66cd4a7a9430860ca1d.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 4,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_3bcbd1e70fb68db2347e02299f6606cb551e9ff1.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_3bcbd1e70fb68db2347e02299f6606cb551e9ff1.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 5,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_f59f96b42ea25f9f8cb244fcc15a4ec9ff8bd5b6.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_f59f96b42ea25f9f8cb244fcc15a4ec9ff8bd5b6.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 6,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_ccd197a3d5beb8c605b53545db95f00027d80104.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_ccd197a3d5beb8c605b53545db95f00027d80104.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 7,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_62f0d3414e2a2c76051747f4615499c3cbc737d7.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_62f0d3414e2a2c76051747f4615499c3cbc737d7.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 8,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_d1320ccbaf6e6c62a2c929fcff7406c909f8439b.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_d1320ccbaf6e6c62a2c929fcff7406c909f8439b.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 9,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_55c480ab0fd33408a1c944a7266cd09c1b91acce.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_55c480ab0fd33408a1c944a7266cd09c1b91acce.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 10,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_74c30144cddb20b0f4f1c0717ac1e4fb1623d04c.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_74c30144cddb20b0f4f1c0717ac1e4fb1623d04c.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 11,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_9a79a69cfd22eaaad420f97cc0205dac8f85be43.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_9a79a69cfd22eaaad420f97cc0205dac8f85be43.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 12,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_a373027db9e3f72f10637204bad95fb3810a3170.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_a373027db9e3f72f10637204bad95fb3810a3170.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 13,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_3cadfb247aa0d225670d60d8cdc545554094d357.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_3cadfb247aa0d225670d60d8cdc545554094d357.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 14,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_faa1e45e4845311a00f6aaf3c02d7c36d32e4f56.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_faa1e45e4845311a00f6aaf3c02d7c36d32e4f56.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 16,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_1f9956077132d8a9615e70b21b1e10481f0ef55c.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_1f9956077132d8a9615e70b21b1e10481f0ef55c.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 17,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_ccc232de705914fdb2cae6b8b3791c7598fda62b.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_ccc232de705914fdb2cae6b8b3791c7598fda62b.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 18,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_16570b68fd000173674bc992059c3ea290e80017.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_16570b68fd000173674bc992059c3ea290e80017.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 19,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_3bed7f439285ecc7430e6aeb5e7b83af7e2dda90.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_3bed7f439285ecc7430e6aeb5e7b83af7e2dda90.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 20,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_ef7734a27e258833e1bc7ace3b2aaef5c323c40e.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_ef7734a27e258833e1bc7ace3b2aaef5c323c40e.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 21,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_5e89aead640bd6189ae0a2f3329269797e626f46.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_5e89aead640bd6189ae0a2f3329269797e626f46.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 22,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_d7a50d02dfc45e8a993ac80f69007d2868b2cab8.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_d7a50d02dfc45e8a993ac80f69007d2868b2cab8.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 23,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_430bed4b79e8d629af7e4f4320a6d4aa9457c3e9.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_430bed4b79e8d629af7e4f4320a6d4aa9457c3e9.1920x1080.jpg?t=1693186011"
+      },
+      {
+      "id": 24,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_a96d444e888b266eca15326c6567382ea552ca0d.600x338.jpg?t=1693186011",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1384160/ss_a96d444e888b266eca15326c6567382ea552ca0d.1920x1080.jpg?t=1693186011"
+      }
+      ],
+    movies: [
+      {
+      "id": 256837800,
+      "name": "Opening",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256837800/movie.293x165.jpg?t=1684981251",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256837800/movie480_vp9.webm?t=1684981251",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256837800/movie_max_vp9.webm?t=1684981251"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256837800/movie480.mp4?t=1684981251",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256837800/movie_max.mp4?t=1684981251"
+      },
+      "highlight": true
+      },
+      {
+      "id": 256846317,
+      "name": "Accolades",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256846317/movie.293x165.jpg?t=1684981256",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256846317/movie480_vp9.webm?t=1684981256",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256846317/movie_max_vp9.webm?t=1684981256"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256846317/movie480.mp4?t=1684981256",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256846317/movie_max.mp4?t=1684981256"
+      },
+      "highlight": true
+      },
+      {
+      "id": 256821736,
+      "name": "GGST Trailer",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256821736/movie.293x165.jpg?t=1684981268",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256821736/movie480_vp9.webm?t=1684981268",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256821736/movie_max_vp9.webm?t=1684981268"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256821736/movie480.mp4?t=1684981268",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256821736/movie_max.mp4?t=1684981268"
+      },
+      "highlight": true
+      },
+      {
+      "id": 256837802,
+      "name": "17 - GGST I-No",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256837802/movie.293x165.jpg?t=1684981272",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256837802/movie480_vp9.webm?t=1684981272",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256837802/movie_max_vp9.webm?t=1684981272"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256837802/movie480.mp4?t=1684981272",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256837802/movie_max.mp4?t=1684981272"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256821734,
+      "name": "15 - GGST Anji",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256821734/movie.293x165.jpg?t=1684981277",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256821734/movie480_vp9.webm?t=1684981277",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256821734/movie_max_vp9.webm?t=1684981277"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256821734/movie480.mp4?t=1684981277",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256821734/movie_max.mp4?t=1684981277"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256821731,
+      "name": "12 - GGST Giovanna",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256821731/movie.293x165.jpg?t=1684981280",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256821731/movie480_vp9.webm?t=1684981280",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256821731/movie_max_vp9.webm?t=1684981280"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256821731/movie480.mp4?t=1684981280",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256821731/movie_max.mp4?t=1684981280"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256821730,
+      "name": "11 - GGST Leo and Nagoriyuki",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256821730/movie.293x165.jpg?t=1684981285",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256821730/movie480_vp9.webm?t=1684981285",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256821730/movie_max_vp9.webm?t=1684981285"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256821730/movie480.mp4?t=1684981285",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256821730/movie_max.mp4?t=1684981285"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256803714,
+      "name": "09 - GGST Ramlethal",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256803714/movie.293x165.jpg?t=1684981289",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803714/movie480_vp9.webm?t=1684981289",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803714/movie_max_vp9.webm?t=1684981289"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803714/movie480.mp4?t=1684981289",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803714/movie_max.mp4?t=1684981289"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256803712,
+      "name": "08 - GGST Millia & Zato",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256803712/movie.293x165.jpg?t=1684981294",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803712/movie480_vp9.webm?t=1684981294",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803712/movie_max_vp9.webm?t=1684981294"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803712/movie480.mp4?t=1684981294",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803712/movie_max.mp4?t=1684981294"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256803709,
+      "name": "07 - GGST Faust",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256803709/movie.293x165.jpg?t=1684981298",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803709/movie480_vp9.webm?t=1684981298",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803709/movie_max_vp9.webm?t=1684981298"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803709/movie480.mp4?t=1684981298",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803709/movie_max.mp4?t=1684981298"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256803701,
+      "name": "05 - GGST Chipp and Potemkin",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256803701/movie.293x165.jpg?t=1684981302",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803701/movie480_vp9.webm?t=1684981302",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803701/movie_max_vp9.webm?t=1684981302"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803701/movie480.mp4?t=1684981302",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803701/movie_max.mp4?t=1684981302"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256803696,
+      "name": "04 - GGST Axl",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256803696/movie.293x165.jpg?t=1684981306",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803696/movie480_vp9.webm?t=1684981306",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803696/movie_max_vp9.webm?t=1684981306"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803696/movie480.mp4?t=1684981306",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803696/movie_max.mp4?t=1684981306"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256803693,
+      "name": "03 - GGST May",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256803693/movie.293x165.jpg?t=1684981311",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803693/movie480_vp9.webm?t=1684981311",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803693/movie_max_vp9.webm?t=1684981311"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803693/movie480.mp4?t=1684981311",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803693/movie_max.mp4?t=1684981311"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256803690,
+      "name": "02 - GGST Sol and Ky",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256803690/movie.293x165.jpg?t=1684981315",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803690/movie480_vp9.webm?t=1684981315",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803690/movie_max_vp9.webm?t=1684981315"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256803690/movie480.mp4?t=1684981315",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256803690/movie_max.mp4?t=1684981315"
+      },
+      "highlight": false
+      },
+      {
+      "id": 256802401,
+      "name": "07/30 Trailer",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256802401/movie.293x165.jpg?t=1684981319",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256802401/movie480_vp9.webm?t=1684981319",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256802401/movie_max_vp9.webm?t=1684981319"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256802401/movie480.mp4?t=1684981319",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256802401/movie_max.mp4?t=1684981319"
+      },
+      "highlight": false
+      }
+      ],
+    background: "https://cdn.akamai.steamstatic.com/steam/apps/1384160/page_bg_generated_v6b.jpg?t=1693186011",
+    keys: [
+      "AEyGyRQF9ay1",
+      "VFrdwccznoK1",
+      "6ojhfbB8MeY1",
+      "x9JBeqAOLpm1",
+      "wBbLptUzPrF1",
+      "uk9VSqRozeq1",
+      "dwM59U2hRNs1",
+      "mPAp8RSlxwG1"
+    ],
+    rating_pos: 2745,
+    rating_neg: 194,
+
+    featured: true,
+    discount: 0,
+    png_image: "https://static.wikia.nocookie.net/guilty-gear/images/6/66/Sol_Guilty_Gear_Strive.png/revision/latest?cb=20191119010226",
+  }, // GUILTY GEAR STRIVE
+  {
+    name: "TEKKEN 8",
+    detailed_description: "<h1>TEKKEN 8 - Ultimate Edition</h1><p><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1778820/extras/Steam_ULT_616x347.png?t=1692957440\" /><br>La Ultimate Edition incluye:<br>• TEKKEN 8<br>• Pase de personajes jugables del año 1<br>- 4 personajes jugables adicionales<br>- Aspecto de avatar: Kinjin<br>• Atuendo de personaje: Paquete de trajes (oro)<br>- 1 atuendo por cada personaje jugable (32 en total)<br>• Atuendo de avatar: Conjunto de camisetas clásicas TEKKEN<br>- 32 diseños<br>• Aspectos de avatar: Kazuya Mishima, Jin Kazama y Jun Kazama</p><br><h1>TEKKEN 8 - Deluxe Edition</h1><p><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1778820/extras/Steam_DX_616x347.png?t=1692957440\" /><br>La Deluxe Edition incluye:<br>• TEKKEN 8<br>• Pase de personajes jugables del año 1<br>- 4 personajes jugables adicionales<br>- Aspecto de avatar: Kinjin<br>• Atuendo de personaje: Paquete de trajes (oro)<br>- 1 atuendo por cada personaje jugable (32 en total)</p><br><h1>Acerca del juego</h1>Prepárate para el próximo capítulo de la legendaria franquicia del juego de lucha: TEKKEN 8.<br><br>• 32 luchadores para una nueva generación<br>Aspectos visuales de los personajes totalmente rediseñados. Modelos elaborados de gran detallismo creados desde cero y gráficos de alta fidelidad que sobrepasan los límites del hardware de última generación y suman realismo a las características peleas de TEKKEN. Entornos vivos y escenarios destructibles se combinan para generar una extraordinaria sensación de inmersión y dar lugar a la experiencia de juego definitiva.<br><br>• Nuevo juego, nueva rivalidad<br>Fist Meets Fate en TEKKEN 8. La saga TEKKEN, que ostenta el récord de la trama con mayor recorrido de un videojuego, se sumerge en un nuevo capítulo con TEKKEN 8. Tras un salto de seis meses después de la conclusión del último enfrentamiento, continúa la trágica narrativa de los linajes Mishima y Kazama, y los cruentos y amargos combates paternofiliales. La historia del crecimiento personal y la determinación de Jin Kazama marca un nuevo capítulo en la imperecedera saga.<br><br>• Sensacionales combates cargados de emoción que encarnan la agresividad y la destrucción<br>El nuevo sistema de batalla, Heat, incrementa la naturaleza agresiva de los combates, sin perder de vista la sensación de juego y las tácticas características de la saga TEKKEN. La intensidad de los enfrentamientos se ve potenciada con la destrucción de escenarios. Desatar supermovimientos como los Rage Arts dejará con la boca abierta a jugadores y espectadores por igual. ¡Todas estas mecánicas de gran calibre se unen para hacer de TEKKEN 8 la entrega más fascinante de la saga hasta la fecha!<br><br>• ¡Disfruta de la vida Tekken!<br>En el nuevo modo para un jugador, Misión arcade, crearás a tu propio avatar y te embarcarás en tu nueva vida TEKKEN. Ábrete paso combate a combate por multitud de arcades mientras se desarrolla la historia y ve dominando las habilidades básicas y prácticas en TEKKEN 8. Desbloquea un amplio abanico de elementos de personalización para personajes y avatares conforme progresas.<br><br>* Además de esta edición, la Deluxe Edition y la Ultimate Edition también están disponibles. Evita comprar el mismo contenido dos veces.",
+    short_description: "Prepárate para el próximo capítulo de la legendaria franquicia del juego de lucha: TEKKEN 8.",
+    supported_languages: "Inglés<strong>*</strong>, Francés, Italiano, Alemán, Español de España, Árabe, Japonés, Coreano, Portugués de Brasil, Chino simplificado, Chino tradicional, Polaco, Ruso, Tailandés, Español de Hispanoamérica<br><strong>*</strong>idiomas con localización de audio",
+    header_image: "https://cdn.akamai.steamstatic.com/steam/apps/1778820/header.jpg?t=1692957440",
+    pc_requirements: "<strong>Mínimo:</strong><br><ul class=\"bb_ul\"><li>Requiere un procesador y un sistema operativo de 64 bits<br></li><li><strong>Notas adicionales:</strong> To be announced</li></ul>",
+    publishers: ["Bandai Namco Studios Inc."],
+    price: 19599,
+    platforms: {
+      windows: true,
+      mac: false,
+      linux: false
+    },
+    genres: [
+      {
+        "id": "1",
+        "description": "Acción"
+        }
+    ],
+    screenshots: [
+      {
+      "id": 0,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_2317d3a37d40055c47c980490896c8419dd0cf84.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_2317d3a37d40055c47c980490896c8419dd0cf84.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 1,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_11b9c39ee6b9b9791711d78aa38bd7149aa471fe.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_11b9c39ee6b9b9791711d78aa38bd7149aa471fe.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 2,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_28be3c314641e6003e79c717042beb88a85935bd.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_28be3c314641e6003e79c717042beb88a85935bd.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 3,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_7a69fbbf3e98a1713356c30a9f46722fe0f2f507.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_7a69fbbf3e98a1713356c30a9f46722fe0f2f507.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 4,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_90d4321a335b9b89e6654a1d5d5c02a443a2a897.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_90d4321a335b9b89e6654a1d5d5c02a443a2a897.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 5,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_52d9bd94425ec1e569287eedf614107053b48851.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_52d9bd94425ec1e569287eedf614107053b48851.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 6,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_5d8432ae40bf320d71262eb8725a7e1e9e871dbf.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_5d8432ae40bf320d71262eb8725a7e1e9e871dbf.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 7,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_72830c0b4e374cae318071414bf8ab2fd5f89cae.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_72830c0b4e374cae318071414bf8ab2fd5f89cae.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 8,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_3052fa1b4f9c5b2315d7afa0edf9890a60f562d3.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_3052fa1b4f9c5b2315d7afa0edf9890a60f562d3.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 9,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_1ff3daa9113444ebafb6565479c4d380f021e69e.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_1ff3daa9113444ebafb6565479c4d380f021e69e.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 10,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_9d0681af6355915ec68884d54cb3bb3ab0e6e695.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_9d0681af6355915ec68884d54cb3bb3ab0e6e695.1920x1080.jpg?t=1692957440"
+      },
+      {
+      "id": 11,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_855ab6293d637950c0f31a6c25dcba3eadd422ca.600x338.jpg?t=1692957440",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1778820/ss_855ab6293d637950c0f31a6c25dcba3eadd422ca.1920x1080.jpg?t=1692957440"
+      }
+      ],
+    movies: [
+      {
+      "id": 256961348,
+      "name": "TEKKEN 8 - Teaser Trailer",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256961348/movie.293x165.jpg?t=1692734620",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256961348/movie480_vp9.webm?t=1692734620",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256961348/movie_max_vp9.webm?t=1692734620"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256961348/movie480.mp4?t=1692734620",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256961348/movie_max.mp4?t=1692734620"
+      },
+      "highlight": true
+      }
+      ],
+    background: "https://cdn.akamai.steamstatic.com/steam/apps/1778820/page_bg_generated_v6b.jpg?t=1692957440",
+    keys: [
+      "AEyGyRQF9ay2",
+      "VFrdwccznoK2",
+      "6ojhfbB8MeY2",
+      "x9JBeqAOLpm2",
+      "wBbLptUzPrF2",
+      "uk9VSqRozeq2",
+      "dwM59U2hRNs2",
+      "mPAp8RSlxwG2"
+    ],
+    rating_pos: 3445,
+    rating_neg: 447,
+
+    featured: true,
+    discount: 0,
+    png_image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ba3d6bf0-f660-4ce1-a12b-6e1505215b69/dfjzej3-b9af1c07-c155-470c-8d47-3b62a968f84c.png/v1/fill/w_833,h_960/tekken_8___king__transparent_render__by_vgejackler_dfjzej3-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ3NSIsInBhdGgiOiJcL2ZcL2JhM2Q2YmYwLWY2NjAtNGNlMS1hMTJiLTZlMTUwNTIxNWI2OVwvZGZqemVqMy1iOWFmMWMwNy1jMTU1LTQ3MGMtOGQ0Ny0zYjYyYTk2OGY4NGMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.u8rHWMrI0JPb2tBhpGCoSBK8v64FJ1rYE48grP_oR_w",
+  }, // TEKKEN 8
+  {
+    name: "ELDEN RING",
+    detailed_description: "<h1>More games by From Software</h1><p><a href=\"https://store.steampowered.com/app/1888160/ARMORED_CORE_VI_FIRES_OF_RUBICON/\" target=\"_blank\" rel=\"\"  id=\"dynamiclink_0\" >https://store.steampowered.com/app/1888160/ARMORED_CORE_VI_FIRES_OF_RUBICON/</a><br><a href=\"https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/\" target=\"_blank\" rel=\"\"  id=\"dynamiclink_1\" >https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/</a></p><br><h1>More games by From Software</h1><p><a href=\"https://store.steampowered.com/app/374320/DARK_SOULS_III/\" target=\"_blank\" rel=\"\"  id=\"dynamiclink_2\" >https://store.steampowered.com/app/374320/DARK_SOULS_III/</a><br><a href=\"https://store.steampowered.com/app/335300/DARK_SOULS_II_Scholar_of_the_First_Sin/\" target=\"_blank\" rel=\"\"  >https://store.steampowered.com/app/335300/DARK_SOULS_II_Scholar_of_the_First_Sin/</a><br><a href=\"https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/\" target=\"_blank\" rel=\"\"  >https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/</a></p><br><h1>ELDEN RING Deluxe Edition</h1><p><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1245620/extras/ER_Deluxe_Beautyshot_GIF_ES.gif?t=1683618443\" /><br>La edición Deluxe incluye:<br>• ELDEN RING (juego completo)<br>• Libro de arte digital y banda sonora original</p><br><h1>Acerca del juego</h1><img src=\"https://cdn.akamai.steamstatic.com/steam/apps/1245620/extras/ER_Steam_Gif_616x260.gif?t=1683618443\" /><br>EL NUEVO JUEGO DE ROL Y ACCIÓN DE AMBIENTACIÓN FANTÁSTICA.<br>Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.<br><br>• Un extenso mundo lleno de emociones<br>Un vasto mundo perfectamente conectado en el que los territorios abiertos estarán repletos de situaciones y mazmorras enormes con diseños complejos y tridimensionales. Mientras exploras, experimentarás el deleite de descubrir amenazas desconocidas y sobrecogedoras, y eso te haré sentir la emoción de la superación.<br><br>• Crea tu propio personaje<br>Además de personalizar la apariencia de tu personaje, puedes combinar libremente las armas, armaduras y la magia que te equipas. Puedes desarrollar a tu personaje según tu estilo de juego, tanto para aumentar tu fuerza bruta y ser un guerrero poderoso, como para dominar la magia.<br><br>• Un drama épico nacido de un mito<br>Una historia muy profunda contada en fragmentos. Un drama épico en el que las motivaciones de cada personaje se encuentran en las Tierras Intermedias.<br><br>• Jugabilidad online única que te conecta libremente con otros jugadores<br>Además del multijugador, en el que te puedes conectar directamente con otros jugadores y viajar juntos, el juego incluye un elemento online asíncrono único que te permite sentir la presencia de otros.",
+    short_description: "EL NUEVO JUEGO DE ROL Y ACCIÓN DE AMBIENTACIÓN FANTÁSTICA. Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.",
+    supported_languages: "Inglés<strong>*</strong>, Francés, Italiano, Alemán, Español de España, Japonés, Coreano, Polaco, Portugués de Brasil, Ruso, Chino simplificado, Español de Hispanoamérica, Tailandés, Chino tradicional<br><strong>*</strong>idiomas con localización de audio",
+    header_image: "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg?t=1683618443",
+    pc_requirements: "<strong>Mínimo:</strong><br><ul class=\"bb_ul\"><li>Requiere un procesador y un sistema operativo de 64 bits<br></li><li><strong>SO:</strong> Windows 10<br></li><li><strong>Procesador:</strong> INTEL CORE I5-8400 or AMD RYZEN 3 3300X<br></li><li><strong>Memoria:</strong> 12 GB de RAM<br></li><li><strong>Gráficos:</strong> NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB<br></li><li><strong>DirectX:</strong> Versión 12<br></li><li><strong>Almacenamiento:</strong> 60 GB de espacio disponible<br></li><li><strong>Tarjeta de sonido:</strong> Windows Compatible Audio Device<br></li><li><strong>Notas adicionales:</strong> </li></ul>",
+    publishers: ["FromSoftware Inc.",
+    "Bandai Namco Entertainment"],
+    price: 12399,
+    platforms: {
+      windows: true,
+      mac: false,
+      linux: false
+    },
+    genres: [
+      {
+        "id": "1",
+        "description": "Acción"
+        },
+        {
+        "id": "3",
+        "description": "Rol"
+        }
+    ],
+    screenshots: [
+      {
+      "id": 0,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_ae44317e3bd07b7690b4d62cc5d0d1df30367a91.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_ae44317e3bd07b7690b4d62cc5d0d1df30367a91.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 1,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_e80a907c2c43337e53316c71555c3c3035a1343e.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_e80a907c2c43337e53316c71555c3c3035a1343e.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 2,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_b70e156adf9e40aed24c10fb352b7813586e7290.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_b70e156adf9e40aed24c10fb352b7813586e7290.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 3,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_3aec1455923ef49f4e777c2a94dbcd0256f77eb0.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_3aec1455923ef49f4e777c2a94dbcd0256f77eb0.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 4,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_b6c4cdb36cebdbd52b97ab6e0851b7d3e41f03b3.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_b6c4cdb36cebdbd52b97ab6e0851b7d3e41f03b3.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 5,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_e87a3e84890ab19f8995566e62762d5f8ed39315.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_e87a3e84890ab19f8995566e62762d5f8ed39315.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 6,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_1e3dfe515c04f4071207f01d62b85a1d6b560ced.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_1e3dfe515c04f4071207f01d62b85a1d6b560ced.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 7,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_3e556415d1bda00d749b2166ced264bec76f06ee.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_3e556415d1bda00d749b2166ced264bec76f06ee.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 8,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_c372274833ae6e5437b952fa1979430546a43ad9.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_c372274833ae6e5437b952fa1979430546a43ad9.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 9,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_b87601dee58f4dbc36e40a8d803dc6a53ceefe07.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_b87601dee58f4dbc36e40a8d803dc6a53ceefe07.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 10,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_8b58d96262fb0d62a482621b86c6ff85f4f57997.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_8b58d96262fb0d62a482621b86c6ff85f4f57997.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 11,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_1011610a0e330c41a75ffd0b3a9a1bac3205c46a.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_1011610a0e330c41a75ffd0b3a9a1bac3205c46a.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 12,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_41e2e8f3b0ad631e929e0c2ec3d1f21de883e98c.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_41e2e8f3b0ad631e929e0c2ec3d1f21de883e98c.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 13,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_abd681cde3402155a35edb82919b7602cc7ec338.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_abd681cde3402155a35edb82919b7602cc7ec338.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 14,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_0b6e59057b02392b21dde62b4dde65d447e1fa3c.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_0b6e59057b02392b21dde62b4dde65d447e1fa3c.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 15,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_7523a8fc7775ae65cabd94d092ebecbd963258b6.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_7523a8fc7775ae65cabd94d092ebecbd963258b6.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 16,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_ebb332e63dfab864c3bf3c3b1001b69f4da25f9f.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_ebb332e63dfab864c3bf3c3b1001b69f4da25f9f.1920x1080.jpg?t=1683618443"
+      },
+      {
+      "id": 17,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_75f25974c20b8704fe5ee246f74896b550088d3e.600x338.jpg?t=1683618443",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/ss_75f25974c20b8704fe5ee246f74896b550088d3e.1920x1080.jpg?t=1683618443"
+      }
+      ],
+    movies: [
+      {
+      "id": 256864390,
+      "name": "ELDEN RING CGI Trailer - AR GCAM",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256864390/movie.293x165.jpg?t=1646817712",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256864390/movie480_vp9.webm?t=1646817712",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256864390/movie_max_vp9.webm?t=1646817712"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256864390/movie480.mp4?t=1646817712",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256864390/movie_max.mp4?t=1646817712"
+      },
+      "highlight": true
+      },
+      {
+      "id": 256860537,
+      "name": "ELDEN RING Pre-order Trailer - AR GCAM",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256860537/movie.293x165.jpg?t=1646817743",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256860537/movie480_vp9.webm?t=1646817743",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256860537/movie_max_vp9.webm?t=1646817743"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256860537/movie480.mp4?t=1646817743",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256860537/movie_max.mp4?t=1646817743"
+      },
+      "highlight": true
+      },
+      {
+      "id": 256845756,
+      "name": "ELDEN RING Official Gameplay Trailer - AR GCAM",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256845756/movie.293x165.jpg?t=1646817755",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256845756/movie480_vp9.webm?t=1646817755",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256845756/movie_max_vp9.webm?t=1646817755"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256845756/movie480.mp4?t=1646817755",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256845756/movie_max.mp4?t=1646817755"
+      },
+      "highlight": true
+      }
+      ],
+    background: "https://cdn.akamai.steamstatic.com/steam/apps/1245620/page_bg_generated_v6b.jpg?t=1683618443",
+    keys: [
+      "AEyGyRQF9ay3",
+      "VFrdwccznoK3",
+      "6ojhfbB8MeY3",
+      "x9JBeqAOLpm3",
+      "wBbLptUzPrF3",
+      "uk9VSqRozeq3",
+      "dwM59U2hRNs3",
+      "mPAp8RSlxwG3"
+    ],
+    rating_pos: 6191,
+    rating_neg: 477,
+
+    featured: true,
+    discount: 0,
+    png_image: "https://static.wikia.nocookie.net/eldenring/images/a/a2/ER_Icon_Key_Item_Miniature_Ranni.png/revision/latest?cb=20220411011200",
+  }, // ELDEN RING
+  {
+    name: "DARK SOULS™: REMASTERED",
+    detailed_description: "<h1>More games by From Software</h1><p><a href=\"https://store.steampowered.com/app/1888160/ARMORED_CORE_VI_FIRES_OF_RUBICON/\" target=\"_blank\" rel=\"\"  id=\"dynamiclink_0\" >https://store.steampowered.com/app/1888160/ARMORED_CORE_VI_FIRES_OF_RUBICON/</a><br><a href=\"https://store.steampowered.com/app/1245620/ELDEN_RING/\" target=\"_blank\" rel=\"\"  id=\"dynamiclink_1\" >https://store.steampowered.com/app/1245620/ELDEN_RING/</a><br><a href=\"https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/\" target=\"_blank\" rel=\"\"  id=\"dynamiclink_2\" >https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/</a></p><br><h1>More games by From Software</h1><p><a href=\"https://store.steampowered.com/app/374320/DARK_SOULS_III/\" target=\"_blank\" rel=\"\"  >https://store.steampowered.com/app/374320/DARK_SOULS_III/</a><br><a href=\"https://store.steampowered.com/app/335300/DARK_SOULS_II_Scholar_of_the_First_Sin/\" target=\"_blank\" rel=\"\"  >https://store.steampowered.com/app/335300/DARK_SOULS_II_Scholar_of_the_First_Sin/</a></p><br><h1>Acerca del juego</h1>Entonces llegó el Fuego. Vuelve a disfrutar del aclamado juego que definió el género con el que empezó todo. Gracias a una magnífica remasterización, podrás regresar a Lordran con unos impresionantes detalles en alta definición y a 60 fps.<br>Dark Souls Remastered incluye el juego principal y el contenido descargable &quot;Artorias of the Abyss&quot;.<br><br>Características principales:<br>• Un universo profundo y oscuro<br>• Cada final supone un nuevo comienzo<br>• Compleja jugabilidad con muchas posibilidades<br>• Te sientes realizado al ir aprendiendo y dominando el juego<br>• Multijugador (hasta 6 jugadores con servidores dedicados)",
+    short_description: "Entonces llegó el Fuego. Vuelve a disfrutar del aclamado juego que definió el género con el que empezó todo. Gracias a una magnífica remasterización, podrás regresar a Lordran con unos impresionantes detalles en alta definición y a 60 fps.",
+    supported_languages: "Inglés<strong>*</strong>, Francés, Italiano, Alemán, Español de España, Japonés, Coreano, Polaco, Portugués de Brasil, Ruso, Chino simplificado, Chino tradicional<br><strong>*</strong>idiomas con localización de audio",
+    header_image: "https://cdn.akamai.steamstatic.com/steam/apps/570940/header.jpg?t=1682652141",
+    pc_requirements: "<strong>Mínimo:</strong><br><ul class=\"bb_ul\"><li>Requiere un procesador y un sistema operativo de 64 bits<br></li><li><strong>SO:</strong> Windows 7 64-bit, Service Pack 1<br></li><li><strong>Procesador:</strong> Intel Core i5-2300 2.8 GHz / AMD FX-6300, 3.5 GHz<br></li><li><strong>Memoria:</strong> 6 GB de RAM<br></li><li><strong>Gráficos:</strong> GeForce GTX 460, 1 GB / Radeon HD 6870, 1 GB<br></li><li><strong>DirectX:</strong> Versión 11<br></li><li><strong>Almacenamiento:</strong> 8 GB de espacio disponible<br></li><li><strong>Tarjeta de sonido:</strong> DirectX 11 sound device<br></li><li><strong>Notas adicionales:</strong> Low Settings, 60 FPS @ 1080p</li></ul>",
+    publishers: ["FromSoftware Inc.",
+    "Bandai Namco Entertainment"],
+    price: 8299,
+    platforms: {
+      windows: true,
+      mac: false,
+      linux: false
+    },
+    genres: [
+      {
+        "id": "1",
+        "description": "Acción"
+        }
+    ],
+    screenshots: [
+      {
+      "id": 0,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_3a71463e4ccaf28c5c27f6cf8d32a3a125f45404.600x338.jpg?t=1682652141",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_3a71463e4ccaf28c5c27f6cf8d32a3a125f45404.1920x1080.jpg?t=1682652141"
+      },
+      {
+      "id": 1,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_92b2ba470cbfdb8839b649b3f478e5531dd81a17.600x338.jpg?t=1682652141",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_92b2ba470cbfdb8839b649b3f478e5531dd81a17.1920x1080.jpg?t=1682652141"
+      },
+      {
+      "id": 2,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_626cc310dc9ac7fb146011582c864a35e5f3e381.600x338.jpg?t=1682652141",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_626cc310dc9ac7fb146011582c864a35e5f3e381.1920x1080.jpg?t=1682652141"
+      },
+      {
+      "id": 3,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_f1617a419eb3b0cd877ec71230c59aa2672b62dc.600x338.jpg?t=1682652141",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_f1617a419eb3b0cd877ec71230c59aa2672b62dc.1920x1080.jpg?t=1682652141"
+      },
+      {
+      "id": 4,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_f60f54e58b13d0744853672ccd35810397e3fa26.600x338.jpg?t=1682652141",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_f60f54e58b13d0744853672ccd35810397e3fa26.1920x1080.jpg?t=1682652141"
+      },
+      {
+      "id": 5,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_b4a80bd6e828a81db09ecbef5694e5d0cddb2caf.600x338.jpg?t=1682652141",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/570940/ss_b4a80bd6e828a81db09ecbef5694e5d0cddb2caf.1920x1080.jpg?t=1682652141"
+      }
+      ],
+    movies: [
+      {
+      "id": 256717685,
+      "name": "LAUNCH TRAILER UNRATED",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256717685/movie.293x165.jpg?t=1605604943",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256717685/movie480.webm?t=1605604943",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256717685/movie_max.webm?t=1605604943"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256717685/movie480.mp4?t=1605604943",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256717685/movie_max.mp4?t=1605604943"
+      },
+      "highlight": true
+      }
+      ],
+    background: "https://cdn.akamai.steamstatic.com/steam/apps/570940/page_bg_generated_v6b.jpg?t=1682652141",
+    keys: [
+      "AEyGyRQF9ay4",
+      "VFrdwccznoK4",
+      "6ojhfbB8MeY4",
+      "x9JBeqAOLpm4",
+      "wBbLptUzPrF4",
+      "uk9VSqRozeq4",
+      "dwM59U2hRNs4",
+      "mPAp8RSlxwG4"
+    ],
+    rating_pos: 4691,
+    rating_neg: 501,
+
+    featured: true,
+    discount: 0,
+    png_image: "https://i.ibb.co/M2DmYcW/58f361bea4fa116215a923bb.png",
+  }, // DARK SOULS REMASTERED
+  {
+    name: "MONSTER HUNTER RISE",
+    detailed_description: "taba en chino",
+    short_description: "Rise to the challenge and join the hunt! In Monster Hunter Rise, the latest installment in the award-winning and top-selling Monster Hunter series, you’ll become a hunter, explore brand new maps and use a variety of weapons to take down fearsome monsters as part of an all-new storyline.",
+    supported_languages: "Inglés<strong>*</strong>, Francés, Italiano, Alemán, Español de España, Japonés, Coreano, Polaco, Portugués de Brasil, Ruso, Chino simplificado, Chino tradicional<br><strong>*</strong>idiomas con localización de audio",
+    header_image: "https://cdn.akamai.steamstatic.com/steam/apps/1446780/header.jpg?t=1687140511",
+    pc_requirements: "<strong>Especificaciones mínimas:</strong><br><ul class=\"bb_ul\"><li>Requiere procesador y sistema operativo de 64 bits.<br></li><li><strong>Sistema operativo: </strong> Windows 10 (64 bits)<br></li><li><strong>Procesador:</strong> Intel® Core™ i3-4130 o Core™ i5-3470 o AMD FX™-6100 < br></li><li><strong>Memoria:</strong> 8 GB de RAM<br></li><li><strong>Tarjeta de vídeo:</strong> NVIDIA® GeForce® GT 1030 (DDR4) o AMD Radeon™ RX 550<br></li><li><strong>Versión DirectX:</strong> 12<br></li><li><strong>Red:</strong> Conexión a Internet de banda ancha< br></li><li><strong>Almacenamiento:</strong> se requieren 36 GB de espacio disponible<br></li><li><strong>Notas:</strong> 1080p/30 fps cuando se configura la configuración de gráficos a Bajo. Los requisitos del sistema están sujetos a cambios durante el desarrollo del juego.</li></ul>",
+    publishers: ["CAPCOM Co., Ltd."],
+    price: 14299,
+    platforms: {
+      windows: true,
+      mac: false,
+      linux: false
+    },
+    genres: [
+      {
+        "id": "1",
+        "description": "Acción"
+        }
+    ],
+    screenshots: [
+      {
+      "id": 0,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_f8249da14987e3c2d10fd4024736f28774c713da.600x338.jpg?t=1687140511",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_f8249da14987e3c2d10fd4024736f28774c713da.1920x1080.jpg?t=1687140511"
+      },
+      {
+      "id": 1,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_25686086b61ca88a859bc20d588682be92ab4d63.600x338.jpg?t=1687140511",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_25686086b61ca88a859bc20d588682be92ab4d63.1920x1080.jpg?t=1687140511"
+      },
+      {
+      "id": 2,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_d8d96313f1049c800d37a3fc521f06f926fca3ac.600x338.jpg?t=1687140511",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_d8d96313f1049c800d37a3fc521f06f926fca3ac.1920x1080.jpg?t=1687140511"
+      },
+      {
+      "id": 3,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_961c552a99c5c64689bebf0e272b13c80947f644.600x338.jpg?t=1687140511",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_961c552a99c5c64689bebf0e272b13c80947f644.1920x1080.jpg?t=1687140511"
+      },
+      {
+      "id": 4,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_3f1a758231a78ab3cdd76c2f8f04d5bbec45faeb.600x338.jpg?t=1687140511",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_3f1a758231a78ab3cdd76c2f8f04d5bbec45faeb.1920x1080.jpg?t=1687140511"
+      },
+      {
+      "id": 5,
+      "path_thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_5a601d6ecee22fcd0cb6142aec5ff7de1e1de091.600x338.jpg?t=1687140511",
+      "path_full": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/ss_5a601d6ecee22fcd0cb6142aec5ff7de1e1de091.1920x1080.jpg?t=1687140511"
+      }
+      ],
+    movies: [
+      {
+      "id": 256850909,
+      "name": "SnowPC_PV1_50_Kantai_Steamストア用.mp4",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256850909/movie.293x165.jpg?t=1633009834",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256850909/movie480_vp9.webm?t=1633009834",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256850909/movie_max_vp9.webm?t=1633009834"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256850909/movie480.mp4?t=1633009834",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256850909/movie_max.mp4?t=1633009834"
+      },
+      "highlight": true
+      },
+      {
+      "id": 256873105,
+      "name": "01_モンスター１本化_02_スレートなし_2K",
+      "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/256873105/movie.293x165.jpg?t=1644458549",
+      "webm": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256873105/movie480_vp9.webm?t=1644458549",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256873105/movie_max_vp9.webm?t=1644458549"
+      },
+      "mp4": {
+      "480": "http://cdn.akamai.steamstatic.com/steam/apps/256873105/movie480.mp4?t=1644458549",
+      "max": "http://cdn.akamai.steamstatic.com/steam/apps/256873105/movie_max.mp4?t=1644458549"
+      },
+      "highlight": true
+      }
+      ],
+    background: "https://cdn.akamai.steamstatic.com/steam/apps/1446780/page_bg_generated_v6b.jpg?t=1687140511",
+    keys: [
+      "AEyGyRQF9ay5",
+      "VFrdwccznoK5",
+      "6ojhfbB8MeY5",
+      "x9JBeqAOLpm5",
+      "wBbLptUzPrF5",
+      "uk9VSqRozeq5",
+      "dwM59U2hRNs5",
+      "mPAp8RSlxwG5"
+    ],
+    rating_pos: 5011,
+    rating_neg: 806,
+
+    featured: true,
+    discount: 0,
+    png_image: "https://static.wikia.nocookie.net/monsterhunter/images/7/72/MHRise-Magnamalo_Render_001.png/revision/latest?cb=20200917143525",
+  }, // MONSTER HUNTER RISE
   {
     name: "Dark Reflections - Shiori no Kotoha",
     detailed_description: `「シオリノコトハ - Dark Reflections -」 is a novel game in the survival mystery genre set in an inescapable private library.<br>The suspense visual novel 「シオリノコトハ ～密室図書館の生贄～」 has been remade for the CS Novel Club platform so that it can be enjoyed by people of all ages around the world.<br>The character voices of the heroines who color the story are handled by gorgeous VTubers!<br><br><br><strong>◆Introduction</strong><br>“It's over...Everything is over....&quot;<br>A series of murders and bizarre incidents occur in a private library that has become inescapable.<br>Eventually, the food runs out, and the library becomes filled with madness...<br><br><br><strong>◆Synopsis</strong><br>At the end of a deep forest, there was a large library with European-style architecture.<br>Kenji Azuma drops by the library whenever he finds time. The reason why Kenji, who doesn't usually read books, comes by so much is because of the girl who works at the library, Shiori Tokita.<br>Kenji falls in love with her at first sight, and spends his days in the library reading and watching Shiori. One day, Kenji falls asleep and is awakened by the sound of an emergency bell...<br>The area was pitch black and the doors would not open...the library had turned into an inescapable prison.<br>Within the locked down library, Kenji and his friends are tossed about by the mysteries hidden there and the murders that occur...<br><br><br><strong>◆Characters</strong><br>・Shiori Tokita<br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1826030/extras/character01_us.jpg?t=1674021554" /><br>VA: Asano Ruri (Asano Sisters Project / Crocodile.ltd)<br><br>A girl who works as a librarian at the Tokita Library.<br>She is sickly and has never been to school, and spends most of her time either at home or in the Tokita Library.<br><br>・Erika Kimishima<br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1826030/extras/character02_us.jpg?t=1674021554" /><br>VA: Hizuki Miu (WACTOR)<br><br>A high school girl who loves fashion and is Kenji's classmate.<br>She is the type of person who speaks before she thinks, and she acts on the spur of the moment without thinking about the future.<br><br>・Yuna Shiraki<br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1826030/extras/character03_us.jpg?t=1674021554" /><br>VA: Inuchiyo Kokona (Stellar Cycle Campus)<br><br>Kenji's classmate and Erika’s childhood friend.<br>She has excellent grades, but she is weak and has trouble speaking up.<br><br>・Michi Kisaragi<br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1826030/extras/character04_us.jpg?t=1674021554" /><br>VA: Moka (Project ShoveL)<br><br>Shiori's personal doctor who assists Shiori in her work at the Tokita Library and also resides at the library.<br>After getting her doctorate degree at a young age, she was hired by Shiori's grandfather to treat Shiori as a child.<br><br>・Shoko Endo<br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1826030/extras/character05_us.jpg?t=1674021554" /><br>VA: Mitsurugi Lia (WACTOR)<br><br>A nurse at the hospital where Michi is an outpatient once a week.<br>She has a kind heart and a gentle spirit, but she is also a bit of a klutz.<br><br><br><strong>◆New scenarios that new and current fans can enjoy</strong><br>Originally a bishoujo game, scenarios have been updated and new scenarios have been added so that many players can enjoy the game.<br>It is a visual novel game with revamped graphics and fully voice-acted scenarios with a brand new cast.`,
@@ -1150,113 +2239,6 @@ let games = [
     rating_neg: 93,
   },
   {
-    name: "黑白米：敷衍",
-    detailed_description: `这是一款RPG像素回合制，剧情单机游戏。<br />
-    主要讲述着因为某视频Up主拖更视频而产生的冒险，经过千难万险而最终达到目标的过程·····`,
-    short_description: `这是一款RPG像素回合制，剧情单机游戏。玩家只需要根据剧情的走向来完成游戏即可。【本游戏属于残次品，购买前请看清】游戏操作： [建议键盘操作]鼠标：左右键键盘：↑↓←→ ，Shift[加速] ，Space[互动] ，Esc[返回]该游戏拥有较为敷衍的剧情，以及困难的地图解谜。【正常游戏流程大概有6-9个小时左右，无聊的时候可以玩一下】主要讲述着因为某视频Up主拖更视频而产生的冒险，经过千难万险而最终达到目标的过程·····有兴趣的小伙伴可以添加扣扣群：245243107后续还会做出更好的作品！【第二部正在制作中···】`,
-    supported_languages: `Simplified Chinese`,
-    header_image: `https://cdn.akamai.steamstatic.com/steam/apps/1824740/header.jpg?t=1682046691`,
-    pc_requirements: `<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Microsoft® Windows® 7/8/8.1/10 (32bit/64bit)<br></li><li><strong>Processor:</strong> Intel Core2 Duo or better<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> DirectX 9/OpenGL 4.1 capable GPU<br></li><li><strong>DirectX:</strong> Version 9.0<br></li><li><strong>Storage:</strong> 1 GB available space</li></ul>`,
-    publishers: ["黑米", "白米"],
-    price: 13.99,
-    platforms: { windows: true, mac: false, linux: false },
-    genres: [
-      { id: "1", description: "Action" },
-      { id: "25", description: "Adventure" },
-      { id: "3", description: "RPG" },
-      { id: "2", description: "Strategy" },
-    ],
-    screenshots: [
-      {
-        id: 0,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_bfdcfde3b6afa051c674b53767cd657de3f9ba54.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_bfdcfde3b6afa051c674b53767cd657de3f9ba54.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 1,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_793be72cb8ddcf52428d3d3011fff306f095cc14.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_793be72cb8ddcf52428d3d3011fff306f095cc14.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 2,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_dd3adc45243b219f1e5ca9a2d46d44a2e471144b.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_dd3adc45243b219f1e5ca9a2d46d44a2e471144b.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 3,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_6e8cf985c694988f9367ee63c5264e86873ab5e2.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_6e8cf985c694988f9367ee63c5264e86873ab5e2.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 4,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_d90c33a17653d3eb520b8618224b9962e60b76fd.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_d90c33a17653d3eb520b8618224b9962e60b76fd.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 5,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_f35379714e49141630a3eab31a05be3d445cf478.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_f35379714e49141630a3eab31a05be3d445cf478.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 6,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_66b2b609c5760ccd178e304027c64079463551b9.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_66b2b609c5760ccd178e304027c64079463551b9.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 7,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_f1e6172ea6eda79eb28a2ef0942a46203d13af47.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_f1e6172ea6eda79eb28a2ef0942a46203d13af47.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 8,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_fcf06d672a5d734899e574278ed25df88d9da695.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_fcf06d672a5d734899e574278ed25df88d9da695.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 9,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_d90c33a17653d3eb520b8618224b9962e60b76fd.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_d90c33a17653d3eb520b8618224b9962e60b76fd.1920x1080.jpg?t=1682046691",
-      },
-      {
-        id: 10,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_b434a0bbaa554a8afc656091c594a6d0498b3800.600x338.jpg?t=1682046691",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/ss_b434a0bbaa554a8afc656091c594a6d0498b3800.1920x1080.jpg?t=1682046691",
-      },
-    ],
-    movies: [
-      {
-        id: 256861029,
-        name: "黑白米：敷衍",
-        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256861029/movie.293x165.jpg?t=1682045475",
-        webm: {
-          480: "http://cdn.akamai.steamstatic.com/steam/apps/256861029/movie480_vp9.webm?t=1682045475",
-          max: "http://cdn.akamai.steamstatic.com/steam/apps/256861029/movie_max_vp9.webm?t=1682045475",
-        },
-        mp4: { 480: "http://cdn.akamai.steamstatic.com/steam/apps/256861029/movie480.mp4?t=1682045475", max: "http://cdn.akamai.steamstatic.com/steam/apps/256861029/movie_max.mp4?t=1682045475" },
-        highlight: true,
-      },
-    ],
-    background: "https://cdn.akamai.steamstatic.com/steam/apps/1824740/page_bg_generated_v6b.jpg?t=1682046691",
-    keys: [
-      "kWdvl7ruXfxM",
-      "3yThUv9LV8aT",
-      "41FNOem6RDfr",
-      "yAj6S1N2TLUN",
-      "T5zhAIu9MTs3",
-      "tUExKqeaCaHK",
-      "ZmVO9fBWlZRp",
-      "p47YCBhWxiz4",
-      "so081RMxuQol",
-      "Jyig5jin2GTQ",
-      "QyAlgotORRqt",
-      "Vm8cpU4JxzPo",
-      "syU7G0RE7Qcq",
-      "gYeA1fAU030r",
-    ],
-    rating_pos: 386,
-    rating_neg: 188,
-  },
-  {
     name: "Blink Planets",
     detailed_description: `Have you ever dreamed of becoming a pioneer of the universe and developing a whole new planet?<br>Blink Planets is a strategy puzzle game based on the idea of ​​adding planet terraforming to a hexagonal board game.<br><br>The main task of the game is to efficiently place blocks representing different resources, <br>so that people can successfully settle on strange planets in space.<br><br>The colorful Base symbolizes the resources needed to develop a planet.<br>Water, energy, greenery, weather, and gold mines... they don't seem to have anything to do with each other,<br>but the Bases and Blocks are all intertwined to form a habitable planet.<br><br>Every time, the planets change into a new appearance.<br>Create your own planet by connecting each resource effectively within a limited time.<br>What will your planet look like?<h2 class="bb_tag"><strong>Key Features</strong></h2><ul class="bb_ul"><li>Explore the unknown planets in the mysterious universe, and enjoy the charm of terrains.<br></li><li>There is no right answer in making a planet. Use the random Base resources to explore new planets with each time.<br></li><li>At the crossroads of choice, pick a module according to your feelings and have fun of growing in an unexpected direction.<br></li><li>If you need a moment to think, just press the pause button and consider. Your planet will be more beautiful.<br></li><li>Unlock new terrain and achievements as you master the game.<br></li><li>Send your own planet into GIF and share it with your friends.</li></ul>`,
     short_description: `Blink Planets is a strategy puzzle game where you pioneer a wasteland planet into a settleable home for people. The colorful &quot;BASE&quot; symbolizes the resource needed to develop a planet. Place &quot;BLOCKS&quot; to secure further land. Explore more planets to continue welcoming migrants.`,
@@ -1605,189 +2587,6 @@ let games = [
     ],
     rating_pos: 386,
     rating_neg: 243,
-  },
-  {
-    name: "作死吧！UP主！",
-    detailed_description: `<h2 class="bb_tag">用生命在整活！</h2>你是一位直播up主，公司为了让你涨粉涨人气，逼你去叙利亚战场、核辐射区域、丧尸围城的城市等种种危险地方，开始真人生存直播！在开始生存游戏前，你要拿着公司给的一点点可怜的预算资金，自己调配购买需要的生存物资，雇佣其他有不同技能和特性的up主，跟你一起工（zuo）作（si）...总之，流量就是一切！不但要一边整活、完成公司给的涨粉涨流量KPI，还要一边在残酷的环境中活下来！太强了！我愿称你为最强UP主！<h2 class="bb_tag">游戏要素</h2>■多个危险而奇异的直播场景：资本家的公司嘛，当然要你去观众最希望看到的地方直播！包括叙利亚战场、辐射区域的避难所、丧尸围城的城市等等，你在那里直播，肯定可以吸引很多很多的流量！当然，你的生命安全是不在公司考虑范围之内的，没了你，后面还有一大堆up主排着队求公司呢！你不干有的是人干！<br><br><br>■ 各种突发随机事件：在这种奇葩的工作之中，随时会有奇葩的随机事件！观众骂人、莫名掉粉、怪物入侵、暴风雪、资源紧缺、意外收获等等，都让你的真人生存直播之旅充满未知！<br><br>■ 多个不同特性的Up主：你不是孤军奋战！还可以雇佣多个拥有不同技能、不同特性的up主来帮助你一起直播！他们可能在关键时刻挽救你！——或者扯你后腿...<br><br>这是个奇怪的小游戏，希望您玩得开心！：）`,
-    short_description: `用生命在整活！你是一位直播up主，公司为了让你涨粉涨人气，逼你去叙利亚战场、核辐射区域、丧尸围城的城市等种种危险地方，开始真人生存直播！在开始生存游戏前，你要拿着公司给的一点点可怜的预算资金，自己调配购买需要的生存物资，雇佣其他有不同技能和特性的up主，跟你一起工（zuo）作（si）...总之，流量就是一切！不但要一边整活、完成公司给的涨粉涨流量KPI，还要一边在残酷的环境中活下来！太强了！我愿称你为最强UP主！`,
-    supported_languages: `Simplified Chinese`,
-    header_image: `https://cdn.akamai.steamstatic.com/steam/apps/1825880/header.jpg?t=1663375235`,
-    pc_requirements: `<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Microsoft Windows® 8.1/10 (64bit)<br></li><li><strong>Processor:</strong> Intel Core i3-4340 or better<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Compatible OpenGL / VRAM 1GB or better<br></li><li><strong>Storage:</strong> 2 GB available space<br></li><li><strong>Additional Notes:</strong> 1280x768 or better Display</li></ul>`,
-    publishers: ["Kwing works"],
-    price: 67.99,
-    platforms: { windows: true, mac: false, linux: false },
-    genres: [
-      { id: "25", description: "Adventure" },
-      { id: "4", description: "Casual" },
-      { id: "3", description: "RPG" },
-      { id: "28", description: "Simulation" },
-      { id: "2", description: "Strategy" },
-      { id: "70", description: "Early Access" },
-    ],
-    screenshots: [
-      {
-        id: 0,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_5c754f750ddf8a12feb7326ab7d139061ceefe80.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_5c754f750ddf8a12feb7326ab7d139061ceefe80.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 1,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_6ccfa46d1022706e74b4adc44da4d8eff86f80b6.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_6ccfa46d1022706e74b4adc44da4d8eff86f80b6.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 2,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_e4372517dd22ba90e14cf18be6a67d66ce1a6728.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_e4372517dd22ba90e14cf18be6a67d66ce1a6728.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 3,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_85b0853da892bb73bba686a74b1b52c0c207a440.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_85b0853da892bb73bba686a74b1b52c0c207a440.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 4,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_56daf2df61d49047a523c3ae7159f4eaee1e096d.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_56daf2df61d49047a523c3ae7159f4eaee1e096d.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 5,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_93b5177a460d35602fbd301959928c8c7c73bd78.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_93b5177a460d35602fbd301959928c8c7c73bd78.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 6,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_7fec734302bc31f6546654b9c85c24e88c0ffdf6.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_7fec734302bc31f6546654b9c85c24e88c0ffdf6.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 7,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_6511c177f55f03350626c244d8a3473645eca02a.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_6511c177f55f03350626c244d8a3473645eca02a.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 8,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_e51fb31c89601b1cda6939593bf3483a6257a350.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_e51fb31c89601b1cda6939593bf3483a6257a350.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 9,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_ac29608f0ba2a115a51b48192d960ede3daafcb0.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_ac29608f0ba2a115a51b48192d960ede3daafcb0.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 10,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_bfd0ecb41f77fcef0e8d8a88e29695050994d4db.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_bfd0ecb41f77fcef0e8d8a88e29695050994d4db.1920x1080.jpg?t=1663375235",
-      },
-      {
-        id: 11,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_f3ff0d80dabc5f8a0a010bc13b7948dfa52441eb.600x338.jpg?t=1663375235",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/ss_f3ff0d80dabc5f8a0a010bc13b7948dfa52441eb.1920x1080.jpg?t=1663375235",
-      },
-    ],
-    movies: [
-      {
-        id: 256879694,
-        name: "2",
-        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256879694/movie.293x165.jpg?t=1648436058",
-        webm: {
-          480: "http://cdn.akamai.steamstatic.com/steam/apps/256879694/movie480_vp9.webm?t=1648436058",
-          max: "http://cdn.akamai.steamstatic.com/steam/apps/256879694/movie_max_vp9.webm?t=1648436058",
-        },
-        mp4: { 480: "http://cdn.akamai.steamstatic.com/steam/apps/256879694/movie480.mp4?t=1648436058", max: "http://cdn.akamai.steamstatic.com/steam/apps/256879694/movie_max.mp4?t=1648436058" },
-        highlight: true,
-      },
-      {
-        id: 256870244,
-        name: "《作死吧！Up主！》",
-        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256870244/movie.293x165.jpg?t=1648436063",
-        webm: {
-          480: "http://cdn.akamai.steamstatic.com/steam/apps/256870244/movie480_vp9.webm?t=1648436063",
-          max: "http://cdn.akamai.steamstatic.com/steam/apps/256870244/movie_max_vp9.webm?t=1648436063",
-        },
-        mp4: { 480: "http://cdn.akamai.steamstatic.com/steam/apps/256870244/movie480.mp4?t=1648436063", max: "http://cdn.akamai.steamstatic.com/steam/apps/256870244/movie_max.mp4?t=1648436063" },
-        highlight: false,
-      },
-    ],
-    background: "https://cdn.akamai.steamstatic.com/steam/apps/1825880/page_bg_generated_v6b.jpg?t=1663375235",
-    keys: [
-      "o8UWH8MZFKMQ",
-      "VbJWAUU8G7Be",
-      "tjw1oaKcqM96",
-      "Hb9ibSN80LUS",
-      "GBhs19FvMF2S",
-      "oO2rztR8tzQd",
-      "6nt7Xm1kM1Bl",
-      "WahUMzjwvALy",
-      "I9I7ZdSwSfFJ",
-      "aelsezYcv8f8",
-      "D3Pkp0guYF5w",
-      "IVRR3qXzdRLE",
-      "ydSZevUFbOt5",
-      "6QvSYiGro2ph",
-    ],
-    rating_pos: 723,
-    rating_neg: 269,
-  },
-  {
-    name: "Hentai Memory - Sexy Couples",
-    detailed_description: `Train your brain with this memory game, featuring kanji characters and reveal sexy hentai couples as you clear the board.<br><br>Flip two cards, and if they match, they will be removed from the board, revealing a unique image for each of the twelve levels. Learn to recognize kanji characters while at it.<br><br><strong>Features:</strong><br><ul class="bb_ul"><li>12 different adult images to reveal.<br></li><li>Cards are shuffled randomly at each game, for maximum replay value.<br></li><li>Timer, to see how long it takes to solve a puzzle<br></li><li>Gallery where you can view all the puzzle images you have solved.</li></ul><br>Be among the fastest players to achieve a top spot in our Leaderboards and unlock various achievements.`,
-    short_description: `Train your brain with this memory game, featuring kanji characters and reveal sexy hentai couples as you clear the board.`,
-    supported_languages: `English`,
-    header_image: `https://cdn.akamai.steamstatic.com/steam/apps/1824760/header.jpg?t=1637914618`,
-    pc_requirements: `<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Windows XP/Vista/7/8<br></li><li><strong>Processor:</strong> 2 GHz Dual Core<br></li><li><strong>Memory:</strong> 2 GB RAM<br></li><li><strong>DirectX:</strong> Version 9.0c<br></li><li><strong>Storage:</strong> 200 MB available space<br></li><li><strong>Sound Card:</strong> Any</li></ul>`,
-    publishers: ["DIG Publishing"],
-    price: 249,
-    platforms: { windows: true, mac: false, linux: false },
-    genres: [
-      { id: "4", description: "Casual" },
-      { id: "23", description: "Indie" },
-    ],
-    screenshots: [
-      {
-        id: 0,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_4957c6c0067fd2384d0505855004cee93ebc97a7.600x338.jpg?t=1637914618",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_4957c6c0067fd2384d0505855004cee93ebc97a7.1920x1080.jpg?t=1637914618",
-      },
-      {
-        id: 1,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_362fb38cff0254e59bea1bd571908e26fa7a5e89.600x338.jpg?t=1637914618",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_362fb38cff0254e59bea1bd571908e26fa7a5e89.1920x1080.jpg?t=1637914618",
-      },
-      {
-        id: 2,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_3f2793ba0f214642990e876fa961a465de7f7eee.600x338.jpg?t=1637914618",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_3f2793ba0f214642990e876fa961a465de7f7eee.1920x1080.jpg?t=1637914618",
-      },
-      {
-        id: 3,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_ac1263073782bff1eb0ceeeb3a8f2f93c9fced01.600x338.jpg?t=1637914618",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_ac1263073782bff1eb0ceeeb3a8f2f93c9fced01.1920x1080.jpg?t=1637914618",
-      },
-      {
-        id: 4,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_2ee778cf51f5e33b6e0f2724abda950ec853d742.600x338.jpg?t=1637914618",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/ss_2ee778cf51f5e33b6e0f2724abda950ec853d742.1920x1080.jpg?t=1637914618",
-      },
-    ],
-    movies: [
-      {
-        id: 256861872,
-        name: "Gameplay Trailer",
-        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256861872/movie.293x165.jpg?t=1637914606",
-        webm: {
-          480: "http://cdn.akamai.steamstatic.com/steam/apps/256861872/movie480_vp9.webm?t=1637914606",
-          max: "http://cdn.akamai.steamstatic.com/steam/apps/256861872/movie_max_vp9.webm?t=1637914606",
-        },
-        mp4: { 480: "http://cdn.akamai.steamstatic.com/steam/apps/256861872/movie480.mp4?t=1637914606", max: "http://cdn.akamai.steamstatic.com/steam/apps/256861872/movie_max.mp4?t=1637914606" },
-        highlight: true,
-      },
-    ],
-    background: "https://cdn.akamai.steamstatic.com/steam/apps/1824760/page_bg_generated_v6b.jpg?t=1637914618",
-    keys: ["0trOVJuH1EWP", "X3cNNaLCouDk", "qMJzfliptQav", "UeHWTqRidujn", "rgGcOiE1LxXI", "zVtGEQpvxr55", "HNEDwRdP6HyV", "00f7k2IyACpB", "1FtrGgucShyW", "EDrSOfg3MueE"],
-    rating_pos: 676,
-    rating_neg: 132,
   },
   {
     name: "Auro The Bunny",
@@ -6426,115 +7225,6 @@ let games = [
     rating_neg: 232,
   },
   {
-    name: "Make Her Cum",
-    detailed_description: `<h1>Endless Fucker</h1><p><a href="https://store.steampowered.com/app/2404530/Endless_Fucker/" target="_blank" rel=""  id="dynamiclink_0" >https://store.steampowered.com/app/2404530/Endless_Fucker/</a><br>Announcing<h2 class="bb_tag"><strong>Endless Fucker</strong></h2><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1824250/extras/wishlist.gif?t=1685608874" /><br><br>Please consider adding it to your wishlist, it really helps!</p><br><h1>Strip'Em III</h1><p><a href="https://store.steampowered.com/app/2344950/StripEm_III/" target="_blank" rel=""  id="dynamiclink_1" >https://store.steampowered.com/app/2344950/StripEm_III/</a><br>Announcing<h2 class="bb_tag"><strong>Strip'Em III</strong></h2><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1824250/extras/wishlist_Strip_3.gif?t=1685608874" /><br><br>Please consider adding it to your wishlist, it really helps!</p><br><h1>About the Game</h1><strong>Make her Cum</strong> is an<u> Adult toy-play Simulator</u> where you will be able to use <u>sex toys</u> to bring a variety of ladies to orgasm.<br><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1824250/extras/tiana_bed2.gif?t=1685608874" /><br><br>The game has a multitude of toys already available for you to use on our sexy ladies. <br><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1824250/extras/tools.PNG?t=1685608874" /><br><br>High Definition models, animated and eager for you to make them cum like they never have before.<br><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1824250/extras/Aiko_600.jpg?t=1685608874" /><br><br>Right now, the game mechanics allow you to use dildos, hands, fingers, tongue, and anal beads. <br><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1824250/extras/Corrina_600.jpg?t=1685608874" /><br><br>At the moment we have translations for the following languages, but they are machine translations, so some phrases might be a bit off:<br>Spanish, Chinese Simplified, Korean, Japanese, German, French, Russian, Norwegian. <br><br><br><br>Start by undressing the ladies, changing their positions, and using the correct toys to make them all cum.<br><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1824250/extras/Monique_600.jpg?t=1685608874" /><br><br>Dick girls, you asked? Hell yeah!!!<br><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1824250/extras/Untitled-1.png?t=1685608874" /><br><br><br>Announcing<h2 class="bb_tag"><strong>Endless Fucker</strong></h2><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1824250/extras/wishlist.gif?t=1685608874" /><br><br>Please consider adding it to your wishlist, it really helps!<br><a href="https://store.steampowered.com/app/2404530/Endless_Fucker/" target="_blank" rel=""  id="dynamiclink_2" >https://store.steampowered.com/app/2404530/Endless_Fucker/</a>`,
-    short_description: `Make her Cum is an Adult toy-play Simulator where you will be able to use sex toys to bring a variety of ladies to orgasm.`,
-    supported_languages: `English, French, German, Spanish - Spain, Japanese, Korean, Norwegian, Russian, Simplified Chinese`,
-    header_image: `https://cdn.akamai.steamstatic.com/steam/apps/1824250/header.jpg?t=1685608874`,
-    pc_requirements: `<strong>Minimum:</strong><br><ul class="bb_ul"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 8.1<br></li><li><strong>Processor:</strong> Intel I5 or equivalent<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> GTX 1050 or equivalent ( minimum GPU memory 2 GB )<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 12 GB available space</li></ul>`,
-    publishers: ["DreamBig Games"],
-    price: 2804,
-    platforms: { windows: true, mac: false, linux: false },
-    genres: [
-      { id: "4", description: "Casual" },
-      { id: "28", description: "Simulation" },
-    ],
-    screenshots: [
-      {
-        id: 0,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_e0390c44aba0bca7f7df1d01aa4b9bbe1fc92d89.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_e0390c44aba0bca7f7df1d01aa4b9bbe1fc92d89.1920x1080.jpg?t=1685608874",
-      },
-      {
-        id: 1,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_b68f1eed62abfa64cc464e02368daafbd3d2df00.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_b68f1eed62abfa64cc464e02368daafbd3d2df00.1920x1080.jpg?t=1685608874",
-      },
-      {
-        id: 2,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_95777af6fc99e9df93da4b90d7e22255e1b4a075.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_95777af6fc99e9df93da4b90d7e22255e1b4a075.1920x1080.jpg?t=1685608874",
-      },
-      {
-        id: 3,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_dba982cfdf14882bafda746bcb994b7edfc78eee.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_dba982cfdf14882bafda746bcb994b7edfc78eee.1920x1080.jpg?t=1685608874",
-      },
-      {
-        id: 4,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_d2b6e06f548f3766b54a95c26023c9302d5e74f7.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_d2b6e06f548f3766b54a95c26023c9302d5e74f7.1920x1080.jpg?t=1685608874",
-      },
-      {
-        id: 5,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_83769b1af8355e5b400d0362fb95cf06a3b6de1c.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_83769b1af8355e5b400d0362fb95cf06a3b6de1c.1920x1080.jpg?t=1685608874",
-      },
-      {
-        id: 6,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_5ea4dd685b4a370b607abef28a86eae6147fc5a0.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_5ea4dd685b4a370b607abef28a86eae6147fc5a0.1920x1080.jpg?t=1685608874",
-      },
-      {
-        id: 7,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_6a40532ee8249cfe71e663196aef8d6254291870.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_6a40532ee8249cfe71e663196aef8d6254291870.1920x1080.jpg?t=1685608874",
-      },
-      {
-        id: 8,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_4623af5d503f1ce66e82d41bed78d07556a2bcb5.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_4623af5d503f1ce66e82d41bed78d07556a2bcb5.1920x1080.jpg?t=1685608874",
-      },
-      {
-        id: 9,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_007b45a9c42ba5d8268ee46438529d9123623fdb.600x338.jpg?t=1685608874",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/ss_007b45a9c42ba5d8268ee46438529d9123623fdb.1920x1080.jpg?t=1685608874",
-      },
-    ],
-    movies: [
-      {
-        id: 256927885,
-        name: "Update",
-        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256927885/movie.293x165.jpg?t=1675165198",
-        webm: {
-          480: "http://cdn.akamai.steamstatic.com/steam/apps/256927885/movie480_vp9.webm?t=1675165198",
-          max: "http://cdn.akamai.steamstatic.com/steam/apps/256927885/movie_max_vp9.webm?t=1675165198",
-        },
-        mp4: { 480: "http://cdn.akamai.steamstatic.com/steam/apps/256927885/movie480.mp4?t=1675165198", max: "http://cdn.akamai.steamstatic.com/steam/apps/256927885/movie_max.mp4?t=1675165198" },
-        highlight: true,
-      },
-    ],
-    background: "https://cdn.akamai.steamstatic.com/steam/apps/1824250/page_bg_generated_v6b.jpg?t=1685608874",
-    keys: [
-      "uB6Qz0P8F3wV",
-      "DabW2HhyKVg9",
-      "ADUEjILUDCLH",
-      "2ahJwefNd9OT",
-      "iZBjNpm56yKr",
-      "9pQnTUkgyHdp",
-      "uYmhCiIzmMbS",
-      "gBe2R4lssBOp",
-      "WzPzPEX5qAjw",
-      "Z94hd6M3sVkK",
-      "tgCdrDdkLRZt",
-      "rh8CRLm1HhPW",
-      "K2s4iz86GvPt",
-      "DqyJUjvHp7ls",
-      "mL5IODn7v87A",
-      "nJwRXLurlVSR",
-      "30U7D0Sh3YHG",
-      "oFG1hA4sBiYZ",
-      "J48ld1CgRwvE",
-      "VTU579HndbPf",
-      "cfOzdcfaz4JC",
-      "T8s0mdQpPfnr",
-      "iGgMdl9xGrtN",
-      "og2ed3Nb76jP",
-    ],
-    rating_pos: 464,
-    rating_neg: 78,
-  },
-  {
     name: "Galactic Ravager",
     detailed_description: `Galactic Ravager is an arcade scrolling shooter, top view.<br />
     Nice graphics and atmospheric music will immerse you in the Aerospace Troops.<br />
@@ -6673,72 +7363,6 @@ let games = [
     keys: ["lGauQnGlmaLu", "bLeHBikoYQbz", "5JygbUYJhKeu", "eGFJkVLaod99", "ytAOiryTKVGg"],
     rating_pos: 586,
     rating_neg: 255,
-  },
-  {
-    name: "POORLY drawn but HORNY",
-    detailed_description: `<img src="https://cdn.akamai.steamstatic.com/steam/apps/1823980/extras/AboutTitle2.png?t=1665501736" /><br>Poorly drawn? Maybe! Horny? Definitely! Pack girls into tight spaces in a unique hand drawn puzzle game. Featuring polished and fun gameplay, simple mechanics, no generic assets, lots of levels and most importantly high quality poorly hand drawn nude pictures with authentic hentai moans!<br><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1823980/extras/ZoeGameplay.gif?t=1665501736" /><br><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1823980/extras/Feqtures2.png?t=1665501736" /><br><ul class="bb_ul"><li> High quality (eh, poorly drawn) nude pictures on puzzle tiles<br></li><li> 30 levels with increasing difficulty <br></li><li> Fun and polished gameplay (we mean, really fun!)<br></li><li> NO generic assets, everything carefully hand drawn by us<br></li><li> Authentic hentai female moans <br></li><li> Different levels with different tiles, obstacles and game area size<br></li><li> Increasing difficulty from absolutely trivial to challenging</li></ul><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1823980/extras/HowToTitle2.png?t=1665501736" /><br>Your goal is to fit all the tiles into the game area, avoiding possible obstacles. You can drag and drop tiles and rotate them in space. Each level you will unlock new tiles with various shapes and images. The game escalates in complexity, in the first levels you will learn how to play (no boring tutorial needed) and in the later levels you will scratch your head and ponder!`,
-    short_description: `Poorly drawn? Maybe! Horny? Definitely! Pack girls into tight spaces in a unique hand drawn puzzle game.`,
-    supported_languages: `English`,
-    header_image: `https://cdn.akamai.steamstatic.com/steam/apps/1823980/header.jpg?t=1665501736`,
-    pc_requirements: `<strong>Minimum:</strong><br><ul class="bb_ul"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64bit<br></li><li><strong>Processor:</strong> Quad-core Intel or AMD, 2.5 GHz or faster<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> DirectX 11 or DirectX 12 compatible graphics card<br></li><li><strong>Storage:</strong> 1 GB available space</li></ul>`,
-    publishers: ["Cute Pen Games"],
-    price: 13.99,
-    platforms: { windows: true, mac: false, linux: false },
-    genres: [{ id: "4", description: "Casual" }],
-    screenshots: [
-      {
-        id: 0,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_f963c74daa08192bd13db372b5a4bbd16f6ed7d6.600x338.jpg?t=1665501736",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_f963c74daa08192bd13db372b5a4bbd16f6ed7d6.1920x1080.jpg?t=1665501736",
-      },
-      {
-        id: 1,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_23e51e3409aed4510654d4c801b11bc9bda7498f.600x338.jpg?t=1665501736",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_23e51e3409aed4510654d4c801b11bc9bda7498f.1920x1080.jpg?t=1665501736",
-      },
-      {
-        id: 2,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_ca2b29ba0d180096e98faace24d803393ef3cede.600x338.jpg?t=1665501736",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_ca2b29ba0d180096e98faace24d803393ef3cede.1920x1080.jpg?t=1665501736",
-      },
-      {
-        id: 3,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_1d541e53c460c2c62957a374f0f14b17c782ac9d.600x338.jpg?t=1665501736",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_1d541e53c460c2c62957a374f0f14b17c782ac9d.1920x1080.jpg?t=1665501736",
-      },
-      {
-        id: 4,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_cf7c1345ffc33fc888fe5c469b9d7d5b162a3902.600x338.jpg?t=1665501736",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_cf7c1345ffc33fc888fe5c469b9d7d5b162a3902.1920x1080.jpg?t=1665501736",
-      },
-      {
-        id: 5,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_8fb0069d7a45517b7c185bddb5abac2ccacd53be.600x338.jpg?t=1665501736",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_8fb0069d7a45517b7c185bddb5abac2ccacd53be.1920x1080.jpg?t=1665501736",
-      },
-      {
-        id: 6,
-        path_thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_2ea8844bf6a96203db0e5e34e34eb9f3ded0710c.600x338.jpg?t=1665501736",
-        path_full: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/ss_2ea8844bf6a96203db0e5e34e34eb9f3ded0710c.1920x1080.jpg?t=1665501736",
-      },
-    ],
-    movies: [
-      {
-        id: 256879029,
-        name: "v2 without Patreon",
-        thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/256879029/movie.293x165.jpg?t=1647991132",
-        webm: {
-          480: "http://cdn.akamai.steamstatic.com/steam/apps/256879029/movie480_vp9.webm?t=1647991132",
-          max: "http://cdn.akamai.steamstatic.com/steam/apps/256879029/movie_max_vp9.webm?t=1647991132",
-        },
-        mp4: { 480: "http://cdn.akamai.steamstatic.com/steam/apps/256879029/movie480.mp4?t=1647991132", max: "http://cdn.akamai.steamstatic.com/steam/apps/256879029/movie_max.mp4?t=1647991132" },
-        highlight: true,
-      },
-    ],
-    background: "https://cdn.akamai.steamstatic.com/steam/apps/1823980/page_bg_generated_v6b.jpg?t=1665501736",
-    keys: [],
-    rating_pos: 713,
-    rating_neg: 212,
   },
   {
     name: "Alephant",
@@ -6945,7 +7569,17 @@ console.log(">>>", games.length);
 
 async function uploadGames() {
   try {
-    await Game.insertMany(games);
+    for (const game of games) {
+      const existingGame = await Game.findOne({ name: game.name });
+
+      if (!existingGame) {
+        await Game.create(game);
+        console.log(`Game "${game.name}" added to the database.`);
+      } else {
+        console.log(`Game "${game.name}" already exists in the database. Skipping.`);
+      }
+    }
+
     console.log("Games data uploaded successfully!");
   } catch (error) {
     console.error("An error occurred:", error);

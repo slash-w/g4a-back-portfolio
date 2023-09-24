@@ -20,6 +20,10 @@ let schema = new Schema(
     keys: { type: Array }, // no esta
     rating_pos: { type: Number },
     rating_neg: { type: Number },
+
+    featured: { type: Boolean, default: false },
+    discount: { type: Number, default: 0 },
+    png_image: { type: String, default: "" },
     
   },
   {

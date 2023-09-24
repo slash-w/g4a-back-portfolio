@@ -1,20 +1,27 @@
-// En el archivo 'read.js'
-
 import Game from "../../models/Games.js";
 
 async function read(req, res, next) {
-  const { category, title, page } = req.query;
-  const perPage = 100;
+  const { genres, name, featured, onSale, qtty, page } = req.query;
+  const perPage =  parseInt(qtty);
+  const discount = parseInt(onSale);
   const queries = {};
-  const sort = { title: 1 }; // Orden ascendente por título
+  const sort = { name: 1 }; // Ascending order by name
 
-  if (title) {
-    queries.title = { $regex: title.trim(), $options: "i" };
+  if (name) {
+    queries.name = { $regex: name.trim(), $options: "i" };
+  }
+  if (genres) {
+    const genreIds = genres.trim().split(",").map((genre) => genre.trim()); // Parse genre IDs as strings
+    queries.genres = { $elemMatch: { id: { $in: genreIds } } };
+  }
+  if (featured){
+    queries.featured = true
+  }
+  if (discount > 0) {
+    queries.discount = { $gt: 0 };
   }
 
-  if (category) {
-    queries.category_id = { $in: category.trim().split(",") }; // Ajusta el filtro de categoría según la propiedad del modelo
-  }
+  console.log('<<<< games per page >>>>', perPage)
 
   try {
     const totalGames = await Game.countDocuments(queries);
@@ -25,7 +32,7 @@ async function read(req, res, next) {
 
     const skip = (currentPage - 1) * perPage;
     const games = await Game.find(queries)
-      .select("-createdAt -updatedAt") // Proteger las propiedades createdAt y updatedAt
+      .select("-createdAt -updatedAt")
       .sort(sort)
       .skip(skip)
       .limit(perPage);
@@ -42,6 +49,7 @@ async function read(req, res, next) {
     }
 
     return res.status(200).json({
+      totalPages,
       games,
       success: true,
       pagination,

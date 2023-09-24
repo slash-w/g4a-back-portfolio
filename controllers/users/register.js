@@ -207,6 +207,7 @@ export default async (req, res, next) => {
       message: "User register",
     });
   } catch (error) {
+    console.log('crasheo en el register.js :O >>>', error)
     next(error);
   }
 };
